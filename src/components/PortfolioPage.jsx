@@ -16,7 +16,7 @@ const AboutMe = () => {
             <a
               className="text-[#4ECCA3] px-2"
               target="_blank"
-              href="https://codeforces.com/profile/ImAlAmin"
+              href="https://codeforces.com/profile/IamAlAmin"
             >
               PUPIL
             </a>
