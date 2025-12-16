@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Code, Award, Trophy } from "lucide-react";
+import { Award, Code, Trophy } from "lucide-react";
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 
 const CompetitiveProgrammingCard = ({
   platform,
@@ -83,7 +83,7 @@ const CompetitiveProgramming = () => {
 
   useEffect(() => {
     // Fetch Codeforces data
-    fetch("https://codeforces.com/profile/ImAlAmin")
+    fetch("https://codeforces.com/profile/IamAlAmin")
       .then((res) => res.json())
       .then((data) => {
         if (data.status === "OK") {
@@ -103,7 +103,7 @@ const CompetitiveProgramming = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         query: `query {
-          matchedUser(username: "hafiz_Sakib") {
+          matchedUser(username: "MdAlAmin") {
             username
             submitStats: submitStatsGlobal {
               acSubmissionNum {
@@ -146,22 +146,22 @@ const CompetitiveProgramming = () => {
     {
       icon: Code,
       platform: "Codeforces",
-      handle: codeforcesData?.handle || "ImAlAmin",
-      rating: codeforcesData?.rating || "N/A",
+      handle: codeforcesData?.handle || "IamAlAmin",
+      rating: codeforcesData?.rating || "698",
       rank: codeforcesData?.rank || "N/A",
-      contribution: codeforcesData?.contribution || "N/A",
+      contribution: codeforcesData?.contribution || "00",
       description:
         "Solve diverse algorithmic problems with a focus on contests.",
       solvedEasy: 311,
       solvedMedium: 192,
       solvedHard: 47,
-      profileUrl: "https://codeforces.com/profile/ImAlAmin",
+      profileUrl: "https://codeforces.com/profile/IamAlAmin",
     },
     {
       icon: Award,
       platform: "LeetCode",
       handle: leetcodeData?.handle || "MdAlAmin",
-      rating: leetcodeData?.rating || "1532",
+      rating: leetcodeData?.rating || "1360",
       rank: leetcodeData?.contribution || "N/A",
       contribution: leetcodeData?.contribution || "N/A",
       description: "Master DSA and problem-solving through challenges.",
@@ -175,7 +175,7 @@ const CompetitiveProgramming = () => {
       platform: "CodeChef",
       handle: "alamin_cse",
       rating: "Gold Badge in Python",
-      rank: "N/A",
+      rank: "1074",
       contribution: "N/A",
       description: "Sharpen coding skills through well-curated challenges.",
       solvedEasy: 97,
