@@ -64,12 +64,11 @@ const ProjectShowcase = () => {
       featured: true,
     },
     {
-      title: "Blood Donation Management",
+      title: "SakrainBD",
       description:
-        "A user-friendly platform connecting blood donors and recipients efficiently. Users can donate blood and request it when needed, with features to search by blood group and view nearby donation requirements. The site ensures security using JSON Web Token (JWT) and implements a restriction to prevent users from donating more than once within 3 months.",
+        "Developed an E-commerce Website using Django, CSS, JavaScript, and Bootstrap.Implemented user authentication, SSLcommerz Payment System, and Email Verification for security.Enabled users to search products by name or category, leave reviews, and view product-related videos through an API.",
       tags: [
         "JavaScript",
-        "Next JS",
         "Web Development",
         "Tailwind CSS",
         "DaisyUI",
@@ -77,13 +76,12 @@ const ProjectShowcase = () => {
         "NPM Packages",
         "MySQL",
         "Firebase",
-        "Node.js",
-        "Express.js",
-        "Stripe",
+        "Django",
+        "Python",
       ],
       links: {
-        github: "https://github.com/emonmorol/blood_boddies",
-        demo: "https://blood-buddies-donation.web.app/",
+        github: "https://github.com/alamincse97/sakrainbd",
+        demo: "https://e-commerce-frontend-five-rust.vercel.app/",
       },
       image: p2,
       featured: true,
